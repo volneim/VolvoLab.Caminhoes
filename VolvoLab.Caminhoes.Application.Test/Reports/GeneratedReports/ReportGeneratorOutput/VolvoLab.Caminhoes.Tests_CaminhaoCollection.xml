@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageReport scope="VolvoLab.Caminhoes.Tests.Application.Fixtures.CaminhaoCollection">
+  <Summary>
+    <Class>VolvoLab.Caminhoes.Tests.Application.Fixtures.CaminhaoCollection</Class>
+    <Assembly>VolvoLab.Caminhoes.Tests</Assembly>
+    <Files />
+    <Coveredlines>0</Coveredlines>
+    <Uncoveredlines>0</Uncoveredlines>
+    <Coverablelines>0</Coverablelines>
+    <Totallines>0</Totallines>
+    <Linecoverage></Linecoverage>
+    <Coveredbranches>0</Coveredbranches>
+    <Totalbranches>0</Totalbranches>
+  </Summary>
+  <Files />
+</CoverageReport>

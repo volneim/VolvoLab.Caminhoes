@@ -1,0 +1,32 @@
+﻿@using VolvoLab.Caminhoes.MVC.Models
+@model CaminhaoViewModel
+
+@{
+    Layout = null;
+
+}
+
+
+
+<form asp-controller="Caminhao" asp-action="Edit" asp-route-returnurl="@ViewData[" ReturnUrl"]" method="post">
+    <input asp-for=Id type="hidden">
+    <div class="form-group">
+        <label>Número de série</label>
+        <input asp-for=NumSerie class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Modelo</label>
+        <select asp-for=Modelo asp-items="ViewBag.CaminhaoModelos" class="form-control"></select>
+
+    </div>
+    <div class="form-group">
+        <label>Ano de fabricação</label>
+        <input asp-for=AnoFab class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Ano modelo</label>
+        <select asp-for=AnoMod asp-items="ViewBag.caminhaoAnoModelo" class="form-control"></select>
+    </div>
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+</form>

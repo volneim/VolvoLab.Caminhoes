@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageReport scope="VolvoLab.Caminhoes.Tests.Application.Services.CaminhaoServiceAddTests">
+  <Summary>
+    <Class>VolvoLab.Caminhoes.Tests.Application.Services.CaminhaoServiceAddTests</Class>
+    <Assembly>VolvoLab.Caminhoes.Tests</Assembly>
+    <Files>
+      <File>C:\Users\vrmpr\OneDrive\Documentos\Projetos\Volvo\VolvoLab.Caminhoes\VolvoLab.Caminhoes.Application.Test\Application\Services\CaminhaoServiceAddTests.cs</File>
+    </Files>
+    <Coveredlines>0</Coveredlines>
+    <Uncoveredlines>22</Uncoveredlines>
+    <Coverablelines>22</Coverablelines>
+    <Totallines>68</Totallines>
+    <Linecoverage>0</Linecoverage>
+    <Coveredbranches>0</Coveredbranches>
+    <Totalbranches>0</Totalbranches>
+  </Summary>
+  <Metrics>
+    <Element name="ctor">
+      <Cyclomaticcomplexity>1</Cyclomaticcomplexity>
+      <NPathcomplexity>0</NPathcomplexity>
+      <Sequencecoverage>0</Sequencecoverage>
+      <Branchcoverage>0</Branchcoverage>
+      <CrapScore>2</CrapScore>
+    </Element>
+    <Element name="AdicionarCaminhaoValido_RetornarSucesso">
+      <Cyclomaticcomplexity>1</Cyclomaticcomplexity>
+      <NPathcomplexity>0</NPathcomplexity>
+      <Sequencecoverage>0</Sequencecoverage>
+      <Branchcoverage>0</Branchcoverage>
+      <CrapScore>2</CrapScore>
+    </Element>
+    <Element name="AdicionarCaminhaoSemNumSerie_RetornarException">
+      <Cyclomaticcomplexity>1</Cyclomaticcomplexity>
+      <NPathcomplexity>0</NPathcomplexity>
+      <Sequencecoverage>0</Sequencecoverage>
+      <Branchcoverage>0</Branchcoverage>
+      <CrapScore>2</CrapScore>
+    </Element>
+  </Metrics>
+  <Files>
+    <File name="C:\Users\vrmpr\OneDrive\Documentos\Projetos\Volvo\VolvoLab.Caminhoes\VolvoLab.Caminhoes.Application.Test\Application\Services\CaminhaoServiceAddTests.cs">
+      <LineAnalysis line="1" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="using Moq;" />
+      <LineAnalysis line="2" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="using System;" />
+      <LineAnalysis line="3" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="using VolvoLab.Caminhoes.Domain.Entities;" />
+      <LineAnalysis line="4" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="using VolvoLab.Caminhoes.Tests.Application.Fixtures;" />
+      <LineAnalysis line="5" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="using Xunit;" />
+      <LineAnalysis line="6" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
+      <LineAnalysis line="7" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="namespace VolvoLab.Caminhoes.Tests.Application.Services" />
+      <LineAnalysis line="8" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="{" />
+      <LineAnalysis line="9" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="    [Collection(nameof(CaminhaoCollection))]" />
+      <LineAnalysis line="10" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="    public class CaminhaoServiceAddTests" />
+      <LineAnalysis line="11" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="    {" />
+      <LineAnalysis line="12" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        private readonly CaminhaoTestsFixture _caminhaoTestsFixture;" />
+      <LineAnalysis line="13" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        private const int anoFab = 2021;" />
+      <LineAnalysis line="14" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        private const int anoMod = 2021;" />
+      <LineAnalysis line="15" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
+      <LineAnalysis line="16" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="        public CaminhaoServiceAddTests(CaminhaoTestsFixture caminhaoTestsFixture)" />
+      <LineAnalysis line="17" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="        {" />
+      <LineAnalysis line="18" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            _caminhaoTestsFixture = caminhaoTestsFixture;" />
+      <LineAnalysis line="19" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
+      <LineAnalysis line="20" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="        }" />
+      <LineAnalysis line="21" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
+      <LineAnalysis line="22" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        [Fact(DisplayName = &quot;Adicionar caminhão válido&quot;)]" />
+      <LineAnalysis line="23" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        public void AdicionarCaminhaoValido_RetornarSucesso()" />
+      <LineAnalysis line="24" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="        {" />
+      <LineAnalysis line="25" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="            // Arrange" />
+      <LineAnalysis line="26" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            var anoFab = DateTime.Now.Year;" />
+      <LineAnalysis line="27" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            var anoMod = anoFab;" />
+      <LineAnalysis line="28" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            var caminhaoViewModel = _caminhaoTestsFixture.GerarCaminhao(&quot;S123&quot;, &quot;FH&quot;, anoFab, anoMod);" />
+      <LineAnalysis line="29" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            var caminhaoService = _caminhaoTestsFixture.caminhaoService;" />
+      <LineAnalysis line="30" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
+      <LineAnalysis line="31" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="            // Act" />
+      <LineAnalysis line="32" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            caminhaoService.Add(caminhaoViewModel);" />
+      <LineAnalysis line="33" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
+      <LineAnalysis line="34" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
+      <LineAnalysis line="35" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="            //Assert" />
+      <LineAnalysis line="36" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            _caminhaoTestsFixture.caminhaoRep.Verify(cr =&gt; cr.Add(It.IsAny&lt;Caminhao&gt;()), Times.Once);" />
+      <LineAnalysis line="37" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
+      <LineAnalysis line="38" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="        }" />
+      <LineAnalysis line="39" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
+      <LineAnalysis line="40" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        [Theory(DisplayName = &quot;Adicionar caminhão inválido&quot;)]" />
+      <LineAnalysis line="41" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        [InlineData(null, &quot;FH&quot;, anoFab, anoMod, &quot;Atenção: 'Num Serie' não pode ser nulo&quot;)]" />
+      <LineAnalysis line="42" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        [InlineData(&quot;S&quot;, &quot;FH&quot;, anoFab, anoMod, &quot;Atenção: 'Num Serie' deve ter entre 3 e 18&quot;)]" />
+      <LineAnalysis line="43" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        [InlineData(&quot;S123&quot;, null, anoFab, anoMod, &quot;Atenção: 'Modelo' não pode ser nulo&quot;)]" />
+      <LineAnalysis line="44" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        [InlineData(&quot;S123&quot;, &quot;F&quot;, anoFab, anoMod, &quot;Atenção: 'Modelo' deve ter entre 2 e 10&quot;)]" />
+      <LineAnalysis line="45" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        [InlineData(&quot;S123&quot;, &quot;FH&quot;, anoFab - 1, anoMod, &quot;Atenção: 'Ano Fab' deve ser igual a&quot;)]" />
+      <LineAnalysis line="46" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        [InlineData(&quot;S123&quot;, &quot;FH&quot;, anoFab, anoMod + 2, &quot;Atenção: 'Ano Mod' deve estar entre&quot;)]" />
+      <LineAnalysis line="47" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="        public void AdicionarCaminhaoSemNumSerie_RetornarException(string NumSerie, string modelo, int anoFab, int anoMod, string msgException )" />
+      <LineAnalysis line="48" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="        {" />
+      <LineAnalysis line="49" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="            // Arrange" />
+      <LineAnalysis line="50" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            var caminhaoViewModel = _caminhaoTestsFixture.GerarCaminhao(NumSerie," />
+      <LineAnalysis line="51" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="                                                                        modelo," />
+      <LineAnalysis line="52" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="                                                                        anoFab," />
+      <LineAnalysis line="53" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="                                                                        anoMod);" />
+      <LineAnalysis line="54" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
+      <LineAnalysis line="55" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            var caminhaoService = _caminhaoTestsFixture.caminhaoService;" />
+      <LineAnalysis line="56" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
+      <LineAnalysis line="57" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="            // Act" />
+      <LineAnalysis line="58" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            Action act = () =&gt; caminhaoService.Add(caminhaoViewModel);" />
+      <LineAnalysis line="59" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
+      <LineAnalysis line="60" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="            //Assert" />
+      <LineAnalysis line="61" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            Exception exception = Assert.Throws&lt;Exception&gt;(act);" />
+      <LineAnalysis line="62" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="            Assert.StartsWith(msgException, exception.Message);" />
+      <LineAnalysis line="63" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
+      <LineAnalysis line="64" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
+      <LineAnalysis line="65" visits="0" coverage="NotCovered" coveredbranches="" totalbranches="" content="        }" />
+      <LineAnalysis line="66" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="" />
+      <LineAnalysis line="67" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="    }" />
+      <LineAnalysis line="68" visits="-1" coverage="NotCoverable" coveredbranches="" totalbranches="" content="}" />
+    </File>
+  </Files>
+</CoverageReport>

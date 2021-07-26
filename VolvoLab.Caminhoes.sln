@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VolvoLab.Caminhoes.Application", "VolvoLab.Caminhoes.Application\VolvoLab.Caminhoes.Application.csproj", "{D079A326-4EA9-4013-9DE1-7FC14DC981C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VolvoLab.Caminhoes.Domain", "VolvoLab.Caminhoes.Domain\VolvoLab.Caminhoes.Domain.csproj", "{37126139-15BB-47EA-A304-2F3337709FA2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VolvoLab.Caminhoes.Infra.Data", "VolvoLab.Caminhoes.Infra\VolvoLab.Caminhoes.Infra.Data.csproj", "{0DDBB169-EE7D-4B29-94E3-AC71AAF3009C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VolvoLab.Caminhoes.Infra.IOC", "VolvoLab.Caminhoes.Infra.IOC\VolvoLab.Caminhoes.Infra.IOC.csproj", "{931AC3A3-7688-49BE-ABCA-62F853EF8BF2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VolvoLab.Caminhoes.API", "VolvoLab.Caminhoes.API\VolvoLab.Caminhoes.API.csproj", "{D826E43A-F672-44BC-AE7F-45E6C70973A1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VolvoLab.Caminhoes.MVC", "VolvoLab.Caminhoes.MVC\VolvoLab.Caminhoes.MVC.csproj", "{E149A7BB-F100-4D9E-B2B8-8F8A0223D1BF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VolvoLab.Caminhoes.Tests", "VolvoLab.Caminhoes.Application.Test\VolvoLab.Caminhoes.Tests.csproj", "{B05BBC86-1A76-4E2E-B731-2D1CE58839A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D079A326-4EA9-4013-9DE1-7FC14DC981C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D079A326-4EA9-4013-9DE1-7FC14DC981C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D079A326-4EA9-4013-9DE1-7FC14DC981C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D079A326-4EA9-4013-9DE1-7FC14DC981C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37126139-15BB-47EA-A304-2F3337709FA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37126139-15BB-47EA-A304-2F3337709FA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37126139-15BB-47EA-A304-2F3337709FA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37126139-15BB-47EA-A304-2F3337709FA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DDBB169-EE7D-4B29-94E3-AC71AAF3009C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DDBB169-EE7D-4B29-94E3-AC71AAF3009C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DDBB169-EE7D-4B29-94E3-AC71AAF3009C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DDBB169-EE7D-4B29-94E3-AC71AAF3009C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{931AC3A3-7688-49BE-ABCA-62F853EF8BF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{931AC3A3-7688-49BE-ABCA-62F853EF8BF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{931AC3A3-7688-49BE-ABCA-62F853EF8BF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{931AC3A3-7688-49BE-ABCA-62F853EF8BF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D826E43A-F672-44BC-AE7F-45E6C70973A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D826E43A-F672-44BC-AE7F-45E6C70973A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D826E43A-F672-44BC-AE7F-45E6C70973A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D826E43A-F672-44BC-AE7F-45E6C70973A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E149A7BB-F100-4D9E-B2B8-8F8A0223D1BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E149A7BB-F100-4D9E-B2B8-8F8A0223D1BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E149A7BB-F100-4D9E-B2B8-8F8A0223D1BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E149A7BB-F100-4D9E-B2B8-8F8A0223D1BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B05BBC86-1A76-4E2E-B731-2D1CE58839A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B05BBC86-1A76-4E2E-B731-2D1CE58839A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B05BBC86-1A76-4E2E-B731-2D1CE58839A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B05BBC86-1A76-4E2E-B731-2D1CE58839A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5473DDF-ABB2-4D1A-963B-5CC9E50F07AE}
+	EndGlobalSection
+EndGlobal

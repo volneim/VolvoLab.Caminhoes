@@ -1,0 +1,131 @@
+﻿@using VolvoLab.Caminhoes.MVC.Models
+@model PageViewModel<CaminhaoViewModel>
+@{
+    ViewData["Title"] = "Cadastro de caminhões";
+}
+
+
+
+
+<div class="container">
+    <div class="table-wrapper">
+        <div asp-validation-summary="All"></div>
+        <div class="row">
+            <div class="col-sm-12"></div>
+            <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#cadastro">Adicionar</button>
+        </div>
+        <div class="row">
+            <div class="col-sm-12"></div>
+            <table id="customers">
+                <tr>
+                    <th>Número de série</th>
+                    <th>Modelo</th>
+                    <th>Ano fabricação</th>
+                    <th>Ano modelo</th>
+                    <th class="text-center">Ação</th>
+                </tr>
+                @{
+                    foreach (var CaminhaoViewModel in Model.List)
+                    {
+                        <tr>
+                            <td>@CaminhaoViewModel.NumSerie</td>
+                            <td>@CaminhaoViewModel.Modelo</td>
+                            <td>@CaminhaoViewModel.AnoFab</td>
+                            <td>@CaminhaoViewModel.AnoMod</td>
+                            <td class="text-center">
+                                <a class='btn btn-info btn-xs' onclick="editarCaminhao('@CaminhaoViewModel.Id')">
+                                    <span class="glyphicon glyphicon-edit"></span> Alterar
+                                </a>
+                                <a class="btn btn-danger btn-xs" data-toggle="modal" data-target="#delete" onclick="atribuirIdCaminhao('@CaminhaoViewModel.Id')">
+                                    <span class="glyphicon glyphicon-remove"></span> Excluir
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                }
+
+            </table>
+        </div>
+
+
+    </div>
+</div>
+
+
+<div id="cadastro" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Cadastro de caminhão</h5>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body">
+                <form asp-controller="Caminhao" asp-action="Create" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
+                    @{
+                        var caminhaoViewModel = Model.Obj;
+
+                        <div class="form-group">
+                            <label>Número de série</label>
+                            <input asp-for=@caminhaoViewModel.NumSerie class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label>Modelo</label>
+                            <select asp-for=@caminhaoViewModel.Modelo asp-items="ViewBag.CaminhaoModelos" class="form-control"></select>
+                        </div>
+                        <div class="form-group">
+                            <label>Ano de fabricação</label>
+                            <input asp-for=@caminhaoViewModel.AnoFab class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label>Ano modelo</label>
+                            <select asp-for=@caminhaoViewModel.AnoMod asp-items="ViewBag.caminhaoAnoModelo" class="form-control"></select>
+                        </div>
+                    }
+
+
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="edit" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Cadastro de caminhão</h5>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div id="formEdit" class="modal-body">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="delete" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Deseja realmente excluir este caminhão ?</h5>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body">
+                <form asp-controller="Caminhao" asp-action="Delete" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
+                    <input id="caminhaoViewModel_Id" name="caminhaoViewModel.Id" type="hidden">
+
+                    <button type="submit" class="btn btn-primary">Sim</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Não</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

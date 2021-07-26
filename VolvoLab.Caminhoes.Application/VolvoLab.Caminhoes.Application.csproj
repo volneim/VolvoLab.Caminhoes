@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <DebugType>full</DebugType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+	
+  <ItemGroup>
+    <ProjectReference Include="..\VolvoLab.Caminhoes.Domain\VolvoLab.Caminhoes.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="FluentValidation" Version="10.3.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <DebugType>full</DebugType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VolvoLab.Caminhoes.Application\VolvoLab.Caminhoes.Application.csproj" />
+    <ProjectReference Include="..\VolvoLab.Caminhoes.Infra.IOC\VolvoLab.Caminhoes.Infra.IOC.csproj" />
+    <ProjectReference Include="..\VolvoLab.Caminhoes.Infra\VolvoLab.Caminhoes.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
