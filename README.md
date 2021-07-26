@@ -19,6 +19,14 @@ Aplicação em ASP.Core usando os conceitos aderentes à Clean Architecture.
 
 ## Informações importantes
 
+Ao baixar o projeto seguir os passos descritos abaixo:
+1. Clicar com o botão direito da Solution e selecionar no menu suspenso "Definir projetos de inicialização"
+2. Na página que será aberta (Páginas de propriedades da Solução 'VolvoLab.Caminhoes') clicar em "Vários projetos de inicialização"
+3. Na lista de projetos alterar a ação do projeto "VolvoLab.Caminhoes.API" para Iniciar
+4. Na lista de projetos alterar a ação do projeto "VolvoLab.Caminhoes.MVC" para Iniciar
+
+Após esta configuração o projeto estará pronto para rodar
+
 
 
 ```powershell
