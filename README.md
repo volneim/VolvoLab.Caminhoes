@@ -29,7 +29,3 @@ Após esta configuração o projeto estará pronto para rodar
 
 
 
-```powershell
-docker-compose build
-docker-compose up
-```
