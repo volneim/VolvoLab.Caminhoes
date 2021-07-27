@@ -3,8 +3,7 @@
 # Volvo Lab Caminhões - Projeto de avaliação
 
 Projeto modelo para avaliação.<br>
-Aplicação em ASP.Core usando os conceitos aderentes à Clean Architecture.<br>
-Seguindo os padrões mais modermos foiUtilizado uma camada de Web Api separando a frontend do backend, permitindo desta forma uma melhor escalabilidade ao sistema.   
+Aplicação desenvolvida seguindo os conceitos aderentes à Clean Architecture, aos pricípios SOLID e foi utilizado uma camada de Web Api separando o frontend do backend, permitindo desta forma uma melhor escalabilidade ao sistema.   
 
 ![](img/eshop-webmvc-app-screenshot.png)
 
@@ -17,7 +16,7 @@ Seguindo os padrões mais modermos foiUtilizado uma camada de Web Api separando 
 | VolvoLab.Caminhoes.Domain | Entidades do domínio  |
 | VolvoLab.Caminhoes.Infra.Data | Responsável pelo acesso aos dados com EntityFramework |
 | VolvoLab.Caminhoes.Infra.IOC | Centraliza a injeção de dependência  |
-| VolvoLab.Caminhoes.MVC | Interface com o usuário com Bootstrap  |
+| VolvoLab.Caminhoes.MVC | Interface com o usuário em ASP.Net Core MVC com Bootstrap  |
 | VolvoLab.Caminhoes.Tests |  Projeto de testes de unidade com xUnit |
 
 ## Informações importantes
