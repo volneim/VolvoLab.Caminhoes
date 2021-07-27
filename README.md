@@ -4,6 +4,7 @@
 
 Projeto modelo para avaliação.<br>
 Aplicação em ASP.Core usando os conceitos aderentes à Clean Architecture.
+Seguindo os padrões mais modermos foiUtilizado uma camada de Web Api separando a front-end do back-end, permitindo desta forma uma melhor escalabilidade ao sistema.   
 
 ![](img/eshop-webmvc-app-screenshot.png)
 
